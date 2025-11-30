@@ -54,7 +54,7 @@
 
 |Имя|Условия|Важность|Зависимости и дополнительная информация|
 |--------------|---------------------------|--------|----------------|
-|[ЛМЧЗ] Данные не синхронизировались более 1 суток|`last(/LMCZ by http agent/lmcz.lastSync)<(now()-86400)`|Предупреждение||
-|[ЛМЧЗ] Некорректный статус ({ITEM.LASTVALUE})|`last(/LMCZ by http agent/lmcz.status)<>"ready"`|Высокая||
-|[ЛМЧЗ] Некорректный тип режима обслуживания ({ITEM.LASTVALUE})|`last(/LMCZ by http agent/lmcz.operationMode)="service"`|Средняя||
-|[ЛМЧЗ] Системе требуется загрузка БД|`last(/LMCZ by http agent/lmcz.requiresDownload)="true"`|Высокая||
+|[ЛМЧЗ] Данные не синхронизировались более 1 суток|`last(/LMCZ linux by zabbix agent active/lmcz.lastSync)<(now()-86400)`|Предупреждение||
+|[ЛМЧЗ] Некорректный статус ({ITEM.LASTVALUE})|`last(/LMCZ linux by zabbix agent active/lmcz.status)<>"ready"`|Высокая||
+|[ЛМЧЗ] Некорректный тип режима обслуживания ({ITEM.LASTVALUE})|`last(/LMCZ linux by zabbix agent active/lmcz.operationMode)="service"`|Средняя||
+|[ЛМЧЗ] Системе требуется загрузка БД|`last(/LMCZ linux by zabbix agent active/lmcz.requiresDownload)="true"`|Высокая||
