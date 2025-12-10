@@ -15,9 +15,21 @@
 1.5.1-523
 
 ## Конфигурация
-
+> Для linux серверов:
 > Внести в zabbix_agentd.conf строку:
-> UserParameter=lmcz.getStatus, curl -s http://localhost:5995/api/v1/status
+
+```
+UserParameter=lmcz.getStatus, curl -s http://localhost:5995/api/v1/status
+```
+
+
+> Для windows серверов:
+> Внести в zabbix_agentd.conf строку:
+
+```
+UserParameter=lmcz.getStatus, powershell -c "(Invoke-WebRequest -Uri \"http://localhost:5995/api/v1/status\" -UseBasicParsing -Method 'GET' -DisableKeepAlive).Content"
+```
+
 
 ## Установка
 
