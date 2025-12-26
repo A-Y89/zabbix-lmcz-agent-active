@@ -16,11 +16,6 @@
 ЛМЧЗ: 
 - [x] 1.5.1-523
 
-OS: 
-- [x] Ubuntu 22.04 LTS
-- [x] Windows Server 2012 R2 Standard 
-
-
 ## Конфигурация
 ### Для linux серверов:
 Внести в zabbix_agentd.conf строку:
