@@ -18,6 +18,7 @@ zabbix_export:
           delay: '0'
           value_type: CHAR
           trends: '0'
+          status: DISABLED
           preprocessing:
             - type: JSONPATH
               parameters:
@@ -33,7 +34,7 @@ zabbix_export:
           delay: 1h
           value_type: TEXT
           trends: '0'
-          timeout: 30s
+          timeout: 60s
           tags:
             - tag: ЛМЧЗ
         - uuid: cbaa9d5034f744fbbd2b63d410fbe410
@@ -43,6 +44,7 @@ zabbix_export:
           delay: '0'
           value_type: CHAR
           trends: '0'
+          status: DISABLED
           preprocessing:
             - type: JSONPATH
               parameters:
@@ -58,6 +60,7 @@ zabbix_export:
           delay: '0'
           value_type: CHAR
           trends: '0'
+          status: DISABLED
           preprocessing:
             - type: JSONPATH
               parameters:
@@ -91,6 +94,7 @@ zabbix_export:
           key: lmcz.lastUpdate
           delay: '0'
           trends: '0'
+          status: DISABLED
           preprocessing:
             - type: JSONPATH
               parameters:
@@ -106,6 +110,7 @@ zabbix_export:
           delay: '0'
           value_type: CHAR
           trends: '0'
+          status: DISABLED
           preprocessing:
             - type: JSONPATH
               parameters:
@@ -140,6 +145,7 @@ zabbix_export:
           key: lmcz.replicationStatus.blocked_cis.localDocCount
           delay: '0'
           trends: '0'
+          status: DISABLED
           preprocessing:
             - type: JSONPATH
               parameters:
@@ -154,6 +160,7 @@ zabbix_export:
           key: lmcz.replicationStatus.blocked_cis.serverDocCount
           delay: '0'
           trends: '0'
+          status: DISABLED
           preprocessing:
             - type: JSONPATH
               parameters:
@@ -168,6 +175,7 @@ zabbix_export:
           key: lmcz.replicationStatus.blocked_gtin.localDocCount
           delay: '0'
           trends: '0'
+          status: DISABLED
           preprocessing:
             - type: JSONPATH
               parameters:
@@ -182,6 +190,7 @@ zabbix_export:
           key: lmcz.replicationStatus.blocked_gtin.serverDocCount
           delay: '0'
           trends: '0'
+          status: DISABLED
           preprocessing:
             - type: JSONPATH
               parameters:
