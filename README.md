@@ -44,23 +44,23 @@ UserParameter=lmcz.getStatus, powershell -c "(Invoke-WebRequest -Uri \"http://lo
 
 ### Элементы данных
 
-|Имя|Описание|Тип|Ключ и дополнительная информация|
-|----|-----------------------|-------|----------------|
-|Данные /api/v1/status|<p>Возвращает JSON массив с исходными данными.</p>|Zabbix агент (активный)|lmcz.getStatus<br>|
-|Версия СПО «Локальный модуль «Честный ЗНАК»||Зависимый элемент данных|lmcz.version<p>**Предобработка**</p><ul><li><p>JSON: `$.version`</p></li></ul>|
-|Версия базы данных «чёрного списка»||Зависимый элемент данных|lmcz.dbVersion<p>**Предобработка**</p><ul><li><p>JSON: `$.dbVersion`</p></li></ul>|
-|Дата и время последней синхронизации||Зависимый элемент данных|lmcz.lastSync<p>**Предобработка**</p><ul><li><p>JSON: `$.lastSync`</p></li></ul>|
-|ИНН участника оборота||Зависимый элемент данных|lmcz.inn<p>**Предобработка**</p><ul><li><p>JSON: `$.inn`</p></li></ul>|
-|Идентификатор экземпляра СПО «Локальный модуль «Честный ЗНАК»||Зависимый элемент данных|lmcz.inst<p>**Предобработка**</p><ul><li><p>JSON: `$.inst`</p></li></ul>|
-|Наименование программного обеспечения||Зависимый элемент данных|lmcz.name<p>**Предобработка**</p><ul><li><p>JSON: `$.name`</p></li></ul>|
-|Последнее известное время запуска одной из действующих репликаций||Зависимый элемент данных|lmcz.lastUpdate<p>**Предобработка**</p><ul><li><p>JSON: `$.lastUpdate`</p></li></ul>|
-|Признак, что Системе требуется загрузка БД||Зависимый элемент данных|lmcz.requiresDownload<p>**Предобработка**</p><ul><li><p>JSON: `$.requiresDownload`</p></li></ul>|
-|Состояние репликации blocked_cis - localDocCount||Зависимый элемент данных|lmcz.replicationStatus.blocked_cis.localDocCount<p>**Предобработка**</p><ul><li><p>JSON: `$.replicationStatus.blocked_cis.localDocCount`</p></li></ul>|
-|Состояние репликации blocked_cis - serverDocCount||Зависимый элемент данных|lmcz.replicationStatus.blocked_cis.serverDocCount<p>**Предобработка**</p><ul><li><p>JSON: `$.replicationStatus.blocked_cis.serverDocCount`</p></li></ul>|
-|Состояние репликации blocked_gtin - localDocCount||Зависимый элемент данных|lmcz.replicationStatus.blocked_gtin.localDocCount<p>**Предобработка**</p><ul><li><p>JSON: `$.replicationStatus.blocked_gtin.localDocCount`</p></li></ul>|
-|Состояние репликации blocked_gtin - serverDocCount||Зависимый элемент данных|lmcz.replicationStatus.blocked_gtin.serverDocCount<p>**Предобработка**</p><ul><li><p>JSON: `$.replicationStatus.blocked_gtin.serverDocCount`</p></li></ul>|
+|Имя|Описание|Тип|Ключ и дополнительная информация| Комментарий |
+|----|-----------------------|-------|----------------|----------------|
+|Данные /api/v1/status|<p>Возвращает JSON массив с исходными данными.</p>|Zabbix агент (активный)|lmcz.getStatus<br>| |
+|Версия СПО «Локальный модуль «Честный ЗНАК»||Зависимый элемент данных|lmcz.version<p>**Предобработка**</p><ul><li><p>JSON: `$.version`</p></li></ul>| |
+|Версия базы данных «чёрного списка»||Зависимый элемент данных|lmcz.dbVersion<p>**Предобработка**</p><ul><li><p>JSON: `$.dbVersion`</p></li></ul>|Выключен по-умолчанию|
+|Дата и время последней синхронизации||Зависимый элемент данных|lmcz.lastSync<p>**Предобработка**</p><ul><li><p>JSON: `$.lastSync`</p></li></ul>||
+|ИНН участника оборота||Зависимый элемент данных|lmcz.inn<p>**Предобработка**</p><ul><li><p>JSON: `$.inn`</p></li></ul>|Выключен по-умолчанию|
+|Идентификатор экземпляра СПО «Локальный модуль «Честный ЗНАК»||Зависимый элемент данных|lmcz.inst<p>**Предобработка**</p><ul><li><p>JSON: `$.inst`</p></li></ul>|Выключен по-умолчанию|
+|Наименование программного обеспечения||Зависимый элемент данных|lmcz.name<p>**Предобработка**</p><ul><li><p>JSON: `$.name`</p></li></ul>|Выключен по-умолчанию|
+|Последнее известное время запуска одной из действующих репликаций||Зависимый элемент данных|lmcz.lastUpdate<p>**Предобработка**</p><ul><li><p>JSON: `$.lastUpdate`</p></li></ul>|Выключен по-умолчанию|
+|Признак, что Системе требуется загрузка БД||Зависимый элемент данных|lmcz.requiresDownload<p>**Предобработка**</p><ul><li><p>JSON: `$.requiresDownload`</p></li></ul>||
+|Состояние репликации blocked_cis - localDocCount||Зависимый элемент данных|lmcz.replicationStatus.blocked_cis.localDocCount<p>**Предобработка**</p><ul><li><p>JSON: `$.replicationStatus.blocked_cis.localDocCount`</p></li></ul>|Выключен по-умолчанию|
+|Состояние репликации blocked_cis - serverDocCount||Зависимый элемент данных|lmcz.replicationStatus.blocked_cis.serverDocCount<p>**Предобработка**</p><ul><li><p>JSON: `$.replicationStatus.blocked_cis.serverDocCount`</p></li></ul>|Выключен по-умолчанию|
+|Состояние репликации blocked_gtin - localDocCount||Зависимый элемент данных|lmcz.replicationStatus.blocked_gtin.localDocCount<p>**Предобработка**</p><ul><li><p>JSON: `$.replicationStatus.blocked_gtin.localDocCount`</p></li></ul>|Выключен по-умолчанию|
+|Состояние репликации blocked_gtin - serverDocCount||Зависимый элемент данных|lmcz.replicationStatus.blocked_gtin.serverDocCount<p>**Предобработка**</p><ul><li><p>JSON: `$.replicationStatus.blocked_gtin.serverDocCount`</p></li></ul>|Выключен по-умолчанию|
 |Статус СПО «Локальный модуль «Честный ЗНАК»||Зависимый элемент данных|lmcz.status<p>**Предобработка**</p><ul><li><p>JSON: `$.status`</p></li></ul>|
-|Тип режима обслуживания||Зависимый элемент данных|lmcz.operationMode<p>**Предобработка**</p><ul><li><p>JSON: `$.operationMode`</p></li></ul>|
+|Тип режима обслуживания||Зависимый элемент данных|lmcz.operationMode<p>**Предобработка**</p><ul><li><p>JSON: `$.operationMode`</p></li></ul>||
 
 
 ### Триггеры
